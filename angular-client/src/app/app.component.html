@@ -1,11 +1,20 @@
 <mat-toolbar>
-  <span>Michael Stramel's Portfolio</span>
-  <span class="flex-auto"></span>
-  <mat-slide-toggle 
-    [checked]="themeSvc.colorSchemeSignal() === 'dark'"
-    (change)="$event.checked ? themeSvc.setToDarkMode() : themeSvc.setToLightMode()">
-    {{themeSvc.colorSchemeSignal() === 'dark' ? "Dark Mode" : "Light Mode"}}
-  </mat-slide-toggle>
+  <div class="grid grid-cols-3 gap-4 w-full">
+    <span>
+      <span>Michael Stramel's Portfolio</span>
+    </span>
+    <span class="justify-self-center">
+      <button mat-button (click)="onClickDashboard()">Dashboard</button>
+      <button mat-button (click)="onClickResume()">Resume</button>
+    </span>
+    <span class="justify-self-end">
+      <mat-slide-toggle 
+        [checked]="themeSvc.colorSchemeSignal() === 'dark'"
+        (change)="$event.checked ? themeSvc.setToDarkMode() : themeSvc.setToLightMode()">
+        {{themeSvc.colorSchemeSignal() === 'dark' ? "Dark Mode" : "Light Mode"}}
+      </mat-slide-toggle>
+    </span>
+  </div>
 </mat-toolbar>
 
 <router-outlet />
