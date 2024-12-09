@@ -1,10 +1,11 @@
 import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
 import { Route, Router } from '@angular/router';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner'; 
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'ac-resume',
-  imports: [MatProgressSpinnerModule],
+  imports: [MatProgressSpinnerModule, CommonModule ],
   templateUrl: './resume.component.html',
   styleUrl: './resume.component.scss'
 })

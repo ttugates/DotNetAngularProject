@@ -1,0 +1,119 @@
+<div class="container mx-auto flex gap-8 flex-wrap">
+  <mat-card>
+    <mat-card-title>Tech Stack</mat-card-title>
+    <mat-card-content>
+      <p>During this period, I was a Junior Developer.  All projects I worked on were greenfield and 
+        I was the sole code author of the backend and collaborated with 1 teammate on the front end.
+      </p> 
+      <ul class="[&>li]:mt-1 [&>li]:ml-3">
+        <li> • Azure Hosting using Web Apps, Functions, Service Bus(Topics & Queues), Active Directory/Entra and more.</li>
+        <li> • Azure Powershell CLI, Azure Management API C#, Azure Portal, KUDU</li>
+        <li> • Rollbar, Sentry</li>  
+        <li> • T-SQL, MySQL, Document DB, Redis </li>
+        <li> • Entity Framework, Dapper, Stack Exchange Redis, Lua</li>
+        <li> • ASP.Net Framework -> .NET Core -> .NET 5</li>
+        <li> • SignalR, REST, OData, gRPC, WCF SOAP</li>
+        <li> • Angular 2 -> 14</li>
+        <li> • RXJS, Redux, Material Design</li>      
+      </ul>
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card>
+    <mat-card-title>Support Portal</mat-card-title>
+    <mat-card-content>
+      <h2 class="mt-4"></h2>
+      <p>This was my first project designed for Customer use in Production</p>
+      <ul class="[&>li]:mt-1 [&>li]:ml-3">
+        <li> • Implemented Authentication using MS Identity. </li>
+        <li> • Integrated into Google Calendar API with complex booking functionality. </li>
+        <li> • Tied into existing CRM (Workbooks via WCF & SOAP)s</li>
+        <li> • Implemented WYSWYG(ckeditor) editor for CMS like editing of our product's documentation.</li>
+        <li> • Designed and implemented 10 question Customer Interview to dynamically taylor the documentation experience.</li>
+        <li> • Various small features such as newsletter, Documentation feedback and ranking with notification.</li>      
+      </ul>
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card>
+    <mat-card-title>AutoInspect</mat-card-title>
+    <mat-card-content>     
+      <p>This product interfaced with our legacy desktop product and its customer's data</p>
+      <ul class="[&>li]:mt-1 [&>li]:ml-3">
+        <li> • Upgraded project to newly released .Net Core 1.0</li>
+        <li> • Upgraded authentication to use Identity Server 4 and built out authorization and user management</li>
+        <li> • Interfaced with each Customer's MySQL Db with CRUD on their Work Orders</li>
+        <li> • Implemented image upload to Blob Storage</li>
+        <li> • Implemented image annotation with HTMLCanvas and editing</li>
+        <li> • Implemented video upload & transcode using Azure Media Services</li>
+        <li> • Implemented a site for end Customers to view their realtime Work Order Status with Images and Video</li>
+      </ul>
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card>
+    <mat-card-title>AutoFluent.NET</mat-card-title>
+    <mat-card-content>
+      <p>This is the flaghip product designed to replace our legacy Desktop solution.</p>
+      <p>I estimate I authored 95+% of the back end and 70% of the front end of this product.</p>
+      <ul class="[&>li]:mt-1 [&>li]:ml-3">
+        <li> • Authored clean sheet design of database that beacme > 140 tables.</li>      
+        <li> • Business required all data to be kept in sync on the client in real time.
+          This solution involved tracking all writes by overriding EF's SaveChanges Async.
+          Maintaining ETAGs of PKs, FK relationships and Subscriptions in Redis Db.
+          SignalR to send out Deltas.
+          Custom Front End Service to Get, GetById, GetByFk and return immutable, observable Entities.
+        </li>
+        <li> • Complex row & column level authorization rules.  Specified on Entity and flowed to EF and down to client (forms, helper svc)</li>
+        <li> • Custom Code Generation replaced JSON Schema with string built by reflection.</li>
+        <li> • 
+          Chat with other Tenant employees using Twillio.  Typing|online|read indicators.  
+          Drag and drop, resizable, collapsable chat windows.  Contextual scroll to bottom.
+        </li>
+        <li> • 
+          Scheduling with resource allocation guarding correlating to Work Orders, Technicians Bays and Settings.
+        </li>
+        <li> • 
+          Complex Inventory management with dynamically defined Specifications that were searchable.  Multi-store inventory
+        </li>
+        <li> • Complex accounting with optional Intuit Quickbooks integration. Average vs last cost, aging, statements, End of Day reports</li>
+        <li> • Numerous 3rd party integrations, including: Mitchel1, Twilio SMS, several Google APIs, CarFax, Bridgstone and many more</li>
+        <li> • Tax configuration that accomodated CA and US, shipping address affecting tax</li>
+        <li> • Customer Email and SMS with pay by CCD</li>
+        <li> • WYSIWYG editor for Work Order, Invoice, Quote and Email template</li>
+        <li> • Reporting with accurate time representation in Db and on client</li>
+        <li> • Sales Person and Technician time tracking with efficiency metrics, graphs and reports</li>
+        <li> • Charts with Charts.JS and Apache ECharts</li>
+        <li> • Change Logs - SQL triggers generated.  Client parsed</li>
+      </ul>
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card>
+    <mat-card-title>Utility Portal</mat-card-title>
+    <mat-card-content>
+      <p>Portal for employees to manage Tenants and Infrastructure</p>
+      <ul class="[&>li]:mt-1 [&>li]:ml-3">
+        <li> • Used Azure Management API and ARM Templates to provision new Customers</li>      
+        <li> • View usage statistics, timings by Feature, controller, User, Customer</li>
+        <li> • Manage SQL Migrations, Query all DBs of given environment</li>
+        <li> • Provision SMS with A2P 10DLC requirements</li>
+        <li> • Manage various other business processes</li>
+      </ul>
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card>
+    <mat-card-title>Partner API</mat-card-title>
+    <mat-card-content>
+      <h2 class="mt-4"></h2>
+      <p>API that securely allows approved 3rd parties to view our Customer's data</p>
+      <ul class="[&>li]:mt-1 [&>li]:ml-3">
+        <li> • Used a custom authentication with public / private key</li>      
+        <li> • Customer's each manage access by third parties including products / price levels, etc.</li>
+        <li> • Guarded against over querying</li>
+      </ul>
+    </mat-card-content>
+  </mat-card>
+
+</div>

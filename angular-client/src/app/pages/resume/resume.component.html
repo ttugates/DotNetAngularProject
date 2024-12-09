@@ -3,10 +3,11 @@
       <mat-spinner></mat-spinner>
       <h2>Loading Resume...</h2>
   </div>
-  }
+}
   
 <iframe 
   #iframeRef    
+  [ngStyle]="{ 'display': isLoading ? 'none' : '' }"
   class="container mx-auto h-[920pt] w-[642pt]"
   src="https://docs.google.com/document/d/e/2PACX-1vSUd52Cvyz7I4xv0kegjbI5UqKfFDk_5vqYZ_OYs_FFy8VYw8WslW-6w55Hbdm6WyWw88a6YJUt3kHN/pub?embedded=true" >
 </iframe>

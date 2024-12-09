@@ -6,6 +6,9 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { Router, RouterOutlet } from '@angular/router';
 import { ThemeService } from '@core/theme.service';
+import { DashboardComponent } from '@pages/dashboard/dashboard.component';
+import { ExperienceComponent } from '@pages/experience/experience.component';
+import { FindMeComponent } from '@pages/find-me/find-me.component';
 import { ResumeComponent } from '@pages/resume/resume.component';
 
 @Component({
@@ -31,10 +34,18 @@ export class AppComponent {
     }
 
   public onClickDashboard() {
-    this.router.navigate(["/"]);
+    DashboardComponent.navigateTo(this.router);
   }
 
   public onClickResume() {
     ResumeComponent.navigateTo(this.router);
+  }
+
+  public onClickExperience() {
+    ExperienceComponent.navigateTo(this.router);
+  }
+
+  public onClickFindMe() {
+    FindMeComponent.navigateTo(this.router);
   }
 }

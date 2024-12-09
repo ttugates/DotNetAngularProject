@@ -1,4 +1,4 @@
-<mat-toolbar>
+<mat-toolbar >
   <div class="grid grid-cols-3 gap-4 w-full">
     <span>
       <span>Michael Stramel's Portfolio</span>
@@ -6,6 +6,8 @@
     <span class="justify-self-center">
       <button mat-button (click)="onClickDashboard()">Dashboard</button>
       <button mat-button (click)="onClickResume()">Resume</button>
+      <button mat-button (click)="onClickExperience()">Experience</button>
+      <button mat-button (click)="onClickFindMe()">Find Me</button>
     </span>
     <span class="justify-self-end">
       <mat-slide-toggle 
@@ -16,5 +18,7 @@
     </span>
   </div>
 </mat-toolbar>
+<div class="pt-7">
+  <router-outlet />
+</div>
 
-<router-outlet />

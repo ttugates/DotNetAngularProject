@@ -1,0 +1,58 @@
+<div class="container mx-auto flex gap-8 flex-wrap">
+
+  <!-- About me -->
+  <mat-card class="max-w-2xl min-w-72">
+    <mat-card-title>About me</mat-card-title>
+    <mat-card-content>
+      <p>Hello 👋</p>
+      <p>My name is Michael Stramel and I am a Full Stack Developer with
+        9 years of experience. I live in Katy, TX just outside of Houston.</p>
+      <p>The entirity of my development career has been with 1 company and
+        new I am seeking a new role as a Mid-Senior .Net Developer.</p>
+      <div class="flex justify-center items-center mt-5">
+        👉&nbsp;
+        <button mat-stroked-button (click)="onClickResume()" class="text-center">
+          <mat-icon>assignment</mat-icon>
+          Resume
+        </button>
+      </div>
+    </mat-card-content>
+  </mat-card>
+
+  <!-- Experience -->
+  <mat-card class="max-w-2xl min-w-72">
+    <mat-card-title>Experience</mat-card-title>
+    <mat-card-content>
+      <mat-list>
+        <mat-list-item lines="3" >
+          <mat-icon matListItemIcon>note</mat-icon>
+          <div matListItemTitle>MS Azure</div>
+          I architected, owned and maintained over 100 Azure Products
+        </mat-list-item>
+        <mat-list-item lines="3" >
+          <mat-icon matListItemIcon>note</mat-icon>
+          <div matListItemTitle>.NET Core</div>
+          I have architected, coded, optimized and maintained several .NET APIs
+        </mat-list-item>
+        <mat-list-item lines="3" >
+          <mat-icon matListItemIcon>note</mat-icon>
+          <span matListItemTitle>RDBMS</span>
+          I have architected from scratch, optimized and maintained over 100 SQL Databases
+        </mat-list-item>
+        <mat-list-item lines="3">
+          <mat-icon matListItemIcon>note</mat-icon>
+          <div matListItemTitle>Angular</div>
+          I have coded, optimized and maintained several Angular Apps
+        </mat-list-item>
+      </mat-list>
+      <div class="flex justify-center items-center">
+        👉&nbsp;
+        <button mat-stroked-button (click)="onClickExperience()" class="text-center">
+          <mat-icon>handyman</mat-icon>
+          Experience
+        </button>
+      </div>
+    </mat-card-content>
+  </mat-card>
+
+</div>
