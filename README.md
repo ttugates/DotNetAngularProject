@@ -28,4 +28,5 @@ The following are features I envision.
 - [ ] Implement OAuth2 
 - [ ] Create a visualization for various sorting algorythms(consider use HTML Canvas)
 - [ ] Consider a custom state management library using WASM(using Rust maybe)
+  - https://github.com/Pauan/rust-signals
 
